@@ -1,0 +1,129 @@
+@media (max-width: 1199.98px) {
+    .site-nav .nav-link {
+        margin: 0 0.6rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .site-header .navbar-collapse {
+        padding: 1rem 0 1.5rem;
+    }
+
+    .site-nav .nav-link {
+        margin: 0;
+        padding: 0.85rem 0 !important;
+        border-bottom: 1px solid var(--c-line);
+    }
+
+    .site-nav .nav-link::after {
+        right: auto;
+        width: 32px;
+        bottom: -1px;
+    }
+
+    .site-nav .btn-brand {
+        margin: 1.25rem 0 0;
+        width: 100%;
+    }
+
+    .hero::before {
+        top: auto;
+        width: 100%;
+        height: 38%;
+        border-left: 0;
+        border-top: 6px solid var(--c-red);
+    }
+
+    .section--blue-left::before {
+        bottom: auto;
+        width: 100%;
+        height: 45%;
+    }
+
+    .hero-media {
+        margin-top: 3rem;
+    }
+
+    .value-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .value-row > div:nth-child(3) {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .value-row > div {
+        padding-bottom: 2rem;
+    }
+
+    .cta-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-panel img {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-head--split {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .mosaic {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .mosaic figure:first-child {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .mosaic figure {
+        aspect-ratio: 4 / 3;
+    }
+
+    .page-banner img {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand-name {
+        font-size: 0.9375rem;
+    }
+
+    .btn-row .btn-brand,
+    .btn-row .btn-outline {
+        width: 100%;
+    }
+
+    .value-row {
+        grid-template-columns: 1fr;
+    }
+
+    .value-row > div,
+    .value-row > div + div {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .value-row > div + div {
+        border-top: 1px solid var(--c-line);
+    }
+
+    .hero-media::after {
+        display: none;
+    }
+}
